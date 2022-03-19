@@ -1,0 +1,27 @@
+{
+    "name": "Torrent-Api-py",
+    "description": "An Unofficial API for 1337x, Piratebay, Nyaasi, Torlock, Torrent Galaxy, Zooqle, Kickass, Bitsearch, MagnetDLLibgen, YTS, Limetorrent, TorrentFunk, Glodls and TorrentProject",
+    "runtime": "python3.9",
+    "env": [
+      {
+        "key": "REDIS_URI",
+        "description": "Provied a redis URI to connect to redis",
+        "value": "Default value of the env var",
+        "required": true
+      },
+      {
+        "key": "PYTHON_ENV",
+        "description": "Don't Change it",
+        "value": "prod",
+        "required": true
+      },
+      {
+        "key": "CACHE_EXPIRATION",
+        "description": "Cahce expiration time in seconds",
+        "value": "180",
+        "required": false
+      }
+    ],
+    "cron": "default cron expression (for eg. 3 minutes)"
+  }
+  
