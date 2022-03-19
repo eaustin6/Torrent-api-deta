@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "public": true,
+  "builds": [{ "src": "main.py", "use": "@vercel/python" }],
+  "build": {
+    "env": {
+      "REDIS_URI": "",
+      "PYTHON_ENV": "prod",
+      "CACHE_EXPIRATION": "180"
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "main.py" }
+  ]
+}
